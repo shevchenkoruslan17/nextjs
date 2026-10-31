@@ -1,19 +1,9 @@
-import Link from "next/link";
+import AuthForm from "@/components/AuthForm";
 
-export default function HomePage() {
+export default function Home() {
     return (
         <main>
-            <h1>Cars</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <Link href="/cars">Автомобілі</Link>
-                    </li>
-                    <li>
-                        <Link href="/cars/creatCars">Додати автомобіль</Link>
-                    </li>
-                </ul>
-            </nav>
+            <AuthForm />
         </main>
     );
 }
