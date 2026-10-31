@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import {Footer} from "@/src/components/Footer";
 
 
 export default function Home() {
@@ -49,6 +50,7 @@ export default function Home() {
                     </a>
                 </div>
             </main>
+            <Footer/>
         </div>
     );
 }
