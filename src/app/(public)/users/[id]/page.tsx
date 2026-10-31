@@ -1,26 +1,9 @@
-import {FC} from "react";
-import {Metadata} from "next";
-
-type Props = {
-    params: { id: string };
-}
-export const generateMetadata = async ({params}: Props): Promise<Metadata> => {
-    const {id} = await params;
-
-    return {
-        title: 'User page  title' + id,
-    }
-}
-
-const UserPage: FC<Props> = async ({params}) => {
-
-    const {id} = await params;
-
-
+const ContactsPage = () => {
     return (
         <div>
-            user page content {id}
+            Contacts page content
         </div>
     );
 };
-export default UserPage;
+
+export default ContactsPage;

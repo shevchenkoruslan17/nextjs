@@ -5,4 +5,6 @@ export const getAllUsers = async (): Promise<IUser[]> => {
         .then(value => value.json());
 
     return users;
+
+
 }
